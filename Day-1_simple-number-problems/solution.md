@@ -15,6 +15,7 @@ for (let i = 1; i <= num; i++) {
 ```
 
 ## Question 2
+
 Print Numbers from N to 1 without changing the loop condition of above question.
 
 ## Code
@@ -24,5 +25,21 @@ const num = 10;
 
 for (let i = 1; i <= num; i++) {
   console.log(num - i + 1);
+}
+```
+
+## Question 3
+
+Print All Even Numbers from 1 to N.
+
+## Code
+
+```javascript
+const num = 60;
+
+for (let i = 1; i <= num; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
 }
 ```
