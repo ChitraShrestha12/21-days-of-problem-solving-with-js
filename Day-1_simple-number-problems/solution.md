@@ -43,3 +43,19 @@ for (let i = 1; i <= num; i++) {
   }
 }
 ```
+
+## Question 4
+
+Sum of First N Natural Numbers.
+
+## Code
+
+```javascript
+const num = 5;
+let sum = 0;
+
+for (let i = 1; i <= num; i++) {
+  sum += i;
+}
+console.log(sum);
+```
