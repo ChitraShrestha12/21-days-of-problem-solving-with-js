@@ -83,8 +83,23 @@ Print Squares of Numbers from 1 to N.
 ## Code
 
 ```javascript
-const num =5;
+const num = 5;
 for (let i = 1; i <= num; i++) {
-  console.log(i*i);
+  console.log(i * i);
+}
+```
+
+## Question 7
+
+Print all numbers divisible by 3 and 5 up to N.
+
+## Code
+
+```javascript
+const num = 30;
+for (let i = 1; i <= num; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log(i);
+  }
 }
 ```

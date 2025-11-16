@@ -1,4 +1,6 @@
-const num =5;
+const num = 30;
 for (let i = 1; i <= num; i++) {
-  console.log(i*i);
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log(i);
+  }
 }
