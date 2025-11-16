@@ -120,3 +120,16 @@ for (let i = 1; i <= num; i++) {
 }
 console.log(sumOfOdd);
 ```
+
+## Question 9
+
+Print the cubes of numbers from 1 to N.
+
+## Code
+
+```javascript
+const num = 5;
+for (let i = 1; i <= num; i++) {
+  console.log(i * i * i);
+}
+```

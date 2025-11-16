@@ -1,8 +1,4 @@
-const num = 10;
-let sumOfOdd = 0;
+const num = 5;
 for (let i = 1; i <= num; i++) {
-  if (i % 2 != 0) {
-    sumOfOdd += i;
-  }
+  console.log(i * i * i);
 }
-console.log(sumOfOdd);
