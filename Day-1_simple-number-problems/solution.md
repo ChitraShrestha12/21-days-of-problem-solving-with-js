@@ -59,3 +59,19 @@ for (let i = 1; i <= num; i++) {
 }
 console.log(sum);
 ```
+
+## Question 5
+
+Product (Factorial) of N.
+
+## Code
+
+```javascript
+const num = 5;
+let fact = 1;
+
+for (let i = 1; i <= num; i++) {
+  fact *= i;
+}
+console.log(fact);
+```

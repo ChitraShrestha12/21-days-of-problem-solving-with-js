@@ -1,8 +1,7 @@
-
 const num = 5;
-let sum = 0;
+let fact = 1;
 
 for (let i = 1; i <= num; i++) {
-  sum += i;
+  fact *= i;
 }
-console.log(sum);
+console.log(fact);
