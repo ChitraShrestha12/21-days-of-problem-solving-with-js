@@ -1,6 +1,6 @@
 const a = 10;
 const b = 20;
-const c = 5;
+const c = 4;
 
 if (a > b && a > c) {
   console.log("a is greater than b and c");
