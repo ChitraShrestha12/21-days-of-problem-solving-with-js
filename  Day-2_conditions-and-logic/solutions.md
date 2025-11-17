@@ -2,7 +2,7 @@
 
 ## Question 1
 
-Write a JavaScript program that prints the numbers from 1 to n using a `for` loop.
+Find the Maximum of Three Numbers.
 
 ## Code
 
