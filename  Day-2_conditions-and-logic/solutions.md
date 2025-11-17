@@ -20,3 +20,26 @@ if (a > b && a > c) {
 }
 
 ```
+
+## Question 2
+
+Check if a Number is Positive, Negative, or Zero.
+
+## Code
+
+```javascript
+const a = 10;
+const b = 20;
+const c = 5;
+
+function checkNumber(a) {
+  if (a > 0) {
+    return "Positive Number!";
+  }
+  if (a < 0) {
+    return "Negetive Number!";
+  }
+  return "Zero!";
+}
+console.log(checkNumber(-60));
+```
