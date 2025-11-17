@@ -43,3 +43,26 @@ function checkNumber(a) {
 }
 console.log(checkNumber(-60));
 ```
+
+## Question 3
+
+Calculate Electricity Bill.
+
+## Code
+
+```javascript
+function calculateBill(units) {
+  let total = 0;
+  if (units <= 100) {
+    total = 100 * 5;
+  } else if (units <= 200) {
+    total = 100 * 5 + (units - 100) * 7;
+  } else if (units <= 300) {
+    total = 100 * 5 + 100 * 7 + (units - 200) * 10;
+  } else {
+    total = 100 * 5 + 100 * 7 + 100 * 10 + (units - 300) * 12;
+  }
+  return total;
+}
+console.log(calculateBill(230));
+```
