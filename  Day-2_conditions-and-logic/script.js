@@ -1,14 +1,18 @@
-function checkLeapYear(year) {
-  if(year === undefined || /[a-z]/.test(year)){
-    return "Invalid Input"
-  }
-  else if ((year % 4 == 0 && year % 100 !== 0 )|| year % 400 == 0) {
-    return "It's a leap year!";
+function checkCharacterType(char){
+  if(char===undefined || char.length!=1){
+    return "Invalid Input!"
+  }else if(!isNaN(char)){
+    return "It's a digit!"
+  }else if(char.charCodeAt()>=65 && char.charCodeAt()<=90){
+    return "It's a Uppercase!"
+  }else if(char.charCodeAt()>=97 && char.charCodeAt()<=122){
+    return("It's a Lowercase!")
   }else{
-    return "It's not a leap year!";
+    return "It's a symbol!"
   }
 }
-console.log(checkLeapYear(2000));
-console.log(checkLeapYear(2250));
-console.log(checkLeapYear());
-console.log(checkLeapYear("r"));
+console.log(checkCharacterType("A")); // It's an Uppercase!
+console.log(checkCharacterType("a")); // It's a Lowercase!
+console.log(checkCharacterType("5")); // It's a digit!
+console.log(checkCharacterType("@")); // It's a symbol!
+console.log(checkCharacterType());    // Invalid Input!
