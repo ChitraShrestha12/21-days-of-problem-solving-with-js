@@ -1,12 +1,14 @@
-function checkVowelAndConsonant(char = "") {
-  if (typeof char !== "string" || char.length !== 1 || !/[a-z]/i.test(char))
-    return "Not a valid Alphabet!";
-  else if ("aeiou".includes(char.toLowerCase())) {
-    return "Vowel";
-  } else {
-    return "Consonant";
+function checkLeapYear(year) {
+  if(year === undefined || /[a-z]/.test(year)){
+    return "Invalid Input"
+  }
+  else if ((year % 4 == 0 && year % 100 !== 0 )|| year % 400 == 0) {
+    return "It's a leap year!";
+  }else{
+    return "It's not a leap year!";
   }
 }
-console.log(checkVowelAndConsonant("a"));
-console.log(checkVowelAndConsonant("B"));
-console.log(checkVowelAndConsonant(8)); 
+console.log(checkLeapYear(2000));
+console.log(checkLeapYear(2250));
+console.log(checkLeapYear());
+console.log(checkLeapYear("r"));
