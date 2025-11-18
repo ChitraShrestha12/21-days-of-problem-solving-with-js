@@ -1,18 +1,14 @@
-function checkCharacterType(char){
-  if(char===undefined || char.length!=1){
-    return "Invalid Input!"
-  }else if(!isNaN(char)){
-    return "It's a digit!"
-  }else if(char.charCodeAt()>=65 && char.charCodeAt()<=90){
-    return "It's a Uppercase!"
-  }else if(char.charCodeAt()>=97 && char.charCodeAt()<=122){
-    return("It's a Lowercase!")
-  }else{
-    return "It's a symbol!"
+function checkIsTriangle(a, b, c) {
+  if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) {
+    return "Right Angled Triangle";
+  } else if (a == b && b == c) {
+    return "Equilateral Triangle";
+  } else if (a == b || b == c || c == a) {
+    return "Isosceles Triangle";
+  } else {
+    return "Scalene Triangle";
   }
 }
-console.log(checkCharacterType("A")); // It's an Uppercase!
-console.log(checkCharacterType("a")); // It's a Lowercase!
-console.log(checkCharacterType("5")); // It's a digit!
-console.log(checkCharacterType("@")); // It's a symbol!
-console.log(checkCharacterType());    // Invalid Input!
+console.log(checkIsTriangle(3, 4, 5));
+console.log(checkIsTriangle(2, 2, 5));
+console.log(checkIsTriangle(5, 5, 5));
