@@ -75,3 +75,20 @@ for(let i=1;i<=rows;i++){
   console.log(str);
 }
 ```
+
+## Question 5
+
+Print Alternating Binary Triangle.
+
+## Code
+
+```javascript
+const rows = 4;
+for(let i=1;i<=rows;i++){
+  let str=''
+  for(let j=1;j<=i;j++){
+    str=str+(i%2==1?j%2:(j+1)%2)
+  }
+  console.log(str)
+}
+```
