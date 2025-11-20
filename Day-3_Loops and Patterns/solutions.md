@@ -112,3 +112,23 @@ for(let i=1;i<=rows;i++){
   console.log(str);
 }
 ```
+
+## Question 7
+
+Print Pyramid Pattern.
+
+## Code
+
+```javascript
+const rows = 5;
+for (let i = 1; i <= rows; i++) {
+  let str = "";
+  for (let j = 1; j <= rows-i; j++) {
+    str = str + "   ";
+  }
+  for (let j = 1; j <= 2*i-1; j++) {
+    str = str + " * ";
+  }
+  console.log(str);
+}
+```
