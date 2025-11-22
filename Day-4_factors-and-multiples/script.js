@@ -1,6 +1,8 @@
-const num = 24;
-for (let i = 1; i <= num; i++) {
-  if (num % i == 0) {
-    console.log(i);
+function multipleUpto(num,limit) {
+  const nums = [];
+  for (let i = 1; i <= limit/num; i++) {
+    nums.push(num * i);
   }
+  return nums;
 }
+console.log(multipleUpto(5,30));
