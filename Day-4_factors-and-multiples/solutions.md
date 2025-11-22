@@ -14,3 +14,19 @@ for (let i = 1; i <= num; i++) {
   }
 }
 ```
+
+## Question 2
+Print All Multiples of a Number up to N.
+
+## Code
+
+```javascript
+function multipleUpto(num,limit) {
+  const nums = [];
+  for (let i = 1; i <= limit/num; i++) {
+    nums.push(num * i);
+  }
+  return nums;
+}
+console.log(multipleUpto(5,30));
+```
